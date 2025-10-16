@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Join our Official Channel</title>
+    <style>
+      :root {
+        /* 3-color palette to match the screenshot */
+        --bg: #ffffff;
+        --fg: #0a0a0a;
+        --muted: #6b7280; /* subtle gray for subtitle */
+        --btn-bg: #000000;
+        --btn-fg: #ffffff;
+      }
+
+      /* Reset-ish */
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        line-height: 1.5;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+
+      main {
+        width: 100%;
+        max-width: 48rem; /* ~768px */
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem 0;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+        /* Responsive size roughly matching the screenshot */
+        font-size: clamp(1.75rem, 2.2rem + 2vw, 3rem);
+      }
+
+      p.sub {
+        margin: 0 0 2rem 0;
+        color: var(--muted);
+        font-size: clamp(0.95rem, 0.9rem + 0.4vw, 1.125rem);
+        font-weight: 500;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-weight: 700;
+        color: var(--btn-fg);
+        background: var(--btn-bg);
+        padding: 0.95rem 2.25rem;
+        border-radius: 9999px; /* pill */
+        box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+        transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+      }
+      .cta:hover {
+        background: #111111;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+      }
+      .cta:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      }
+      .cta:focus-visible {
+        outline: 3px solid #1f2937; /* dark gray focus ring */
+        outline-offset: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Join our Official Channel</h1>
+      <p class="sub">Delivering transparent results for the last 3 years</p>
+      <a class="cta" href="https://t.me/smcindiaofficial" aria-label="Join our official channel">
+        JOIN NOW
+      </a>
+    </main>
+  </body>
+</html>
